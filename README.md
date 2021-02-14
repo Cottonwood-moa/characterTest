@@ -1,7 +1,6 @@
 # Character Test / 닮은 꼴 캐릭터 테스트
 
-**[뱃지나 프로젝트에 관한 이미지들이 이 위치에 들어가면 좋습니다]**  
-One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
+**[사진을 입력받아 자신과 닮은 만화 캐릭터를 찾아주는 서비스 입니다.]**  
 ![20201206191756](https://user-images.githubusercontent.com/79053495/107883315-9e9b7180-6f31-11eb-9b4e-64bcb7947efd.png)
 
 
