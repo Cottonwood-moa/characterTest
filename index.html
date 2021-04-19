@@ -6,6 +6,7 @@
 
   <meta name="google-site-verification" content="99kotiS9rVZ0RmokB7dYnf_yDInglSi2alGCeLWxz0o" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
   <link rel="icon" href="https://img.icons8.com/dusk/64/000000/son-goku.png"/>
   <meta name="description" content="자신과 닮은 꼴 만화 캐릭터를 인공지능이 찾아줍니다!">
@@ -27,49 +28,28 @@
 
 
 <body>
+  <!-- modal content -->
+
+
+    <div id="css-only-modals">
+      <input id="modal1" class="css-only-modal-check" type="checkbox" checked />
+      <div class="css-only-modal">
+        <label for="modal1" class="css-only-modal-close"><i class="fa fa-times fa-2x"></i></label>
+        <h2 style="font-weight: bold;">바른사진</h2>
+        <hr />
+        <img src="images\modal.png" class="upload2 " style="width: 100%;">
+        <p>#사진을 예쁘게 찍어주세요!<br>#가장 바르게 올린 사진이<br>#정확하답니다!<br>#재미로만 보세요!</p>
+
+
+      </div>
+      <div id="screen-shade"></div>
+    </div>
+
+
+    <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 
   <div class="header"></div>
  
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light nav-distance">
-    <a class="navbar-brand" href="#">내 남자친구의 닮은 꼴 캐릭터</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav> -->
-
-
 
 
   <section class="section">
@@ -180,7 +160,7 @@
       <div id="label-container"></div>
 
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <div class="addthis_inline_share_toolbox_k416"></div>
+      <!-- <div class="addthis_inline_share_toolbox_k416"></div> -->
 
       <div class="image-title-wrap">
         <button type="button" onclick="refreshPage()" class="remove-image"> 다시하기 </button>
@@ -482,7 +462,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </section>
   </div>
 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc7851441748898"></script>
+  <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc7851441748898"></script> -->
 </body>
 
 </html>
