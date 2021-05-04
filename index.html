@@ -7,8 +7,7 @@
 
   <meta name="google-site-verification" content="99kotiS9rVZ0RmokB7dYnf_yDInglSi2alGCeLWxz0o" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
   <link rel="icon" href="https://img.icons8.com/dusk/64/000000/son-goku.png" />
   <meta name="description" content="자신과 닮은 꼴 만화 캐릭터를 인공지능이 찾아줍니다!">
   <meta property="og:title" content="닮은 꼴 캐릭터를 찾아보자">
@@ -33,9 +32,10 @@
 
 
   <div id="css-only-modals">
-    <input id="modal1" class="css-only-modal-check" type="checkbox" checked />
+    <div id="modal1" class="css-only-modal-check"></div>
     <div class="css-only-modal">
-      <label for="modal1" class="css-only-modal-close"><i class="fa fa-times fa-2x"></i></label>
+      
+      <div class="css-only-modal-close"><i id="hideIcon" class="fa fa-times fa-2x" style="cursor: pointer;"></i></div>
       <h2 style="font-weight: bold;">바른사진</h2>
       <hr />
       <img src="images\modal.png" class="upload2 " style="width: 100%;">
@@ -46,27 +46,15 @@
     <div id="screen-shade"></div>
   </div>
 
-
   <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 
   <div class="header"></div>
-
-
-
   <section class="section">
     <a href="index.html">
       <h1 class="title mb-3" style="font-weight: bold;">닮은
         꼴 캐릭터</h1>
     </a>
     <h2 class="subtitle mb-3">#나는 어떤 캐릭터와 닮았을까?</h2>
-
-  </section>
-
-
-  <section class="container blog ">
-    <div class="blog-cover d-flex flex-row-reverse bd-highlight">
-      <a href="https://blog.naver.com/blog_geon" target="_blank" class="blog-link">#네이버블로그</a>
-      <img src="images\4.png" class="blog-icon mr-1">
 
   </section>
 
@@ -336,6 +324,29 @@
 
       }
     </script>
+
+<script>
+
+
+  function hideDiv() {
+    $("#hideIcon").click(function () {
+      $("#css-only-modals").stop().hide(1, function () {
+        sessionStorage.setItem("modal", $("#css-only-modals").css("display"));
+        console.log(sessionStorage.getItem("modal"))
+      });
+    });
+
+    if (sessionStorage.getItem("modal")) {
+      $("#css-only-modals").css("display", sessionStorage.getItem("modal"));
+    }
+  }
+  $(document).ready(function () {
+    hideDiv();
+  });
+
+
+</script>
+
     <script src="assets\js\main.js"></script>
 
 
@@ -357,15 +368,20 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
-    <footer id="footer">
-      <div class="copyright">
-        <br> blog_geon@naver.com <br>Cottonwood
-      </div>
-    </footer>
+<footer id="footer">
+  <div class="copyright">
+    <br>made by Cottonwood
+  <a href="https://blog.naver.com/blog_geon/222205581888"> <br> blog_geon@naver.com <br></a>
+    <div>Icons made by Freepik from www.flaticon.com</div>
+   
+
+
+  </div>
+</footer>
     </section>
   </div>
 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc7851441748898"></script>
+  <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc7851441748898"></script> -->
 </body>
 
 </html>

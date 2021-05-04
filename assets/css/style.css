@@ -42,7 +42,7 @@ body {
 	pointer-events: auto;
 }
 
-.css-only-modal-check:checked ~ .css-only-modal {
+.css-only-modal-check {
 	opacity: 1;
 	pointer-events: auto;
 }
@@ -65,6 +65,8 @@ body {
   font-weight: 700;
   font-size: 3.2vw;
   font-family: 'Gamja Flower', cursive;
+  opacity: 1;
+	pointer-events: auto;
  
 }
 
@@ -87,7 +89,7 @@ body {
 	display: none;
 }
 
-.css-only-modal-check:checked ~ #screen-shade {
+.css-only-modal-check{
 	opacity: 0.5;
 	pointer-events: auto;
 }
@@ -102,6 +104,8 @@ body {
 	bottom: 0;
 	pointer-events: none;
 	transition: opacity 0.8s;
+  opacity: 0.5;
+	pointer-events: auto;
 }
   
 /* ------------------------ */
