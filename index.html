@@ -2,6 +2,31 @@
 <html lang="en">
 
 <head>
+  <style type="text/css">
+    div.clickEffect{
+      position:fixed;
+      box-sizing:border-box;
+      border-style:solid;
+      border-color:#000000;
+      border-radius:50%;
+      animation:clickEffect 0.4s ease-out;
+      z-index:99999;
+    }
+    @keyframes clickEffect{
+      0%{
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5rem;
+      }
+      100%{
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03rem;
+      }
+    }
+    </style>
   <meta name="naver-site-verification" content="99a0b2b855103ddc7c5940f990b31b171034d123" />
   <link rel="canonical" href="https://charactertest.tk/">
 
@@ -346,7 +371,16 @@
 
 
 </script>
-
+<script type="text/javascript">
+  function clickEffect(e){
+    var d=document.createElement("div");
+    d.className="clickEffect";
+    d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+    document.body.appendChild(d);
+    d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+  }
+  document.addEventListener('click',clickEffect);
+  </script>
 <!-- git test -->
 
     <script src="assets\js\main.js"></script>
