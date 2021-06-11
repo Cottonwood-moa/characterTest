@@ -119,11 +119,11 @@ body {
 	opacity: 0;
   pointer-events: none;
   font-weight: 700;
-  font-size: 3.2vw;
+  font-size: min(3.2vw,30px);
   font-family: 'Gamja Flower', cursive;
   opacity: 1;
 	pointer-events: auto;
- 
+  max-width: 500px;
 }
 
 .css-only-modal h2 {
@@ -592,11 +592,7 @@ box-shadow: none;
   color: #35465d;
   font-family: 'Gamja Flower', cursive;
 }
-@media screen and (min-width:600px){
-  .css-only-modal {
-    width: 45%;
-  }
-}
+
 
 /* @media screen and (min-width:800px){
   .css-only-modal{
@@ -1033,4 +1029,8 @@ margin:auto;
     font-weight: bold;
     color:#35465d;
     font-size: min(3vw, 20px);
+  }
+
+  .upload2{
+    max-width: 500px;
   }
