@@ -173,6 +173,7 @@ body {
     border-radius: 40px;
     border: solid 1.5px #f6f7fa;
     background-color: #f6f7fa;
+    max-width: 700px;
   }
   
   
