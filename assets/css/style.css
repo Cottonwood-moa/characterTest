@@ -173,7 +173,7 @@ body {
     border-radius: 40px;
     border: solid 1.5px #f6f7fa;
     background-color: #f6f7fa;
-    max-width: 700px;
+    max-width: 600px;
   }
   
   
@@ -274,7 +274,6 @@ body {
   
   .file-upload-image {
     max-height: 50%;
-    max-width: 70%;
     margin: auto;
     padding: 20px;
     border-radius: 40px;
@@ -332,7 +331,7 @@ body {
       line-height: 1.67;
       text-align: center;
       color: #35465d;
-      font-size:4.2vw ;
+      font-size: min(4vw, 40px);
       margin-top: 100px;
       
     }
@@ -351,7 +350,7 @@ body {
       line-height: 1.53;
       text-align: center;
       color: #35465d;
-      font-size:3.5vw 
+      font-size:min(3.5vw, 30px);
     }
 
     button:focus {
@@ -578,7 +577,7 @@ box-shadow: none;
 
 
 #gen{
-  font-size: 3.0vw;
+  font-size: min(3vw, 30px);
   font-weight: bold;
   color: #35465d;
   font-family: 'Gamja Flower', cursive;
@@ -599,7 +598,7 @@ box-shadow: none;
   }
 }
 
-@media screen and (min-width:800px){
+/* @media screen and (min-width:800px){
   .css-only-modal{
     font-size:2.5vw ;
   }
@@ -681,7 +680,6 @@ box-shadow: none;
   }
   .file-upload-image {
     max-height: 50%;
-    max-width: 60%;
     margin: auto;
     padding: 20px;
     border-radius: 40px;
@@ -697,20 +695,8 @@ box-shadow: none;
   .css-only-modal {
     width: 20%;
   }
-}
-#footer {
-  font-family: 'Gamja Flower', cursive;
-  padding: 4em 0 2em 0;
-  background: #f6f7fa;
-}
+} */
 
-  #footer .copyright {
-    color: #bfbfbf;
-    font-size: 0.9em;
-    margin: 0 0 2em 0;
-    padding: 0 1em;
-    text-align: center;
-  }
 /* 
   @media screen and (max-width: 736px) {
 
@@ -1027,5 +1013,24 @@ margin:auto;
   }
 
   
-
+#footer {
+    font-family: 'Gamja Flower', cursive;
+    padding: 4em 0 2em 0;
+    background: #f6f7fa;
+  }
   
+#footer .copyright {
+      color: #bfbfbf;
+      font-size: 0.9em;
+      margin: 0 0 2em 0;
+      padding: 0 1em;
+      text-align: center;
+    }
+
+.upload-text{
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'Gamja Flower', cursive;
+    font-weight: bold;
+    color:#35465d;
+    font-size: min(3vw, 20px);
+  }
