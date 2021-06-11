@@ -123,7 +123,7 @@ body {
   font-family: 'Gamja Flower', cursive;
   opacity: 1;
 	pointer-events: auto;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .css-only-modal h2 {
@@ -1032,5 +1032,5 @@ margin:auto;
   }
 
   .upload2{
-    max-width: 500px;
+    max-width: 400px;
   }
