@@ -7,7 +7,7 @@
 ![image](https://user-images.githubusercontent.com/79053495/150981326-6c293e23-470a-4662-a6b6-ad674818a3ec.png)
 ㅤ  
 ㅤ  
-## Getting Started / 어떻게 시작하나요?
+## Getting Started / 어떻게 시작하나요?  
 ㅤ  
 ㅤ
 https://play.google.com/store/apps/details?id=com.cottonwood.charactertest
