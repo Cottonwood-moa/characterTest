@@ -3,7 +3,8 @@
   
   
 **[사진을 입력받아 자신과 닮은 만화 캐릭터를 찾아주는 서비스 입니다.]**  
-![character](https://user-images.githubusercontent.com/79053495/150975953-d6cbdd8d-700f-424e-819e-71288f24a3cd.png)
+![image](https://user-images.githubusercontent.com/79053495/150981326-6c293e23-470a-4662-a6b6-ad674818a3ec.png)
+  
 
 
 ## Getting Started / 어떻게 시작하나요?
